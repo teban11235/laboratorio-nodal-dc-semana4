@@ -1,0 +1,70 @@
+@import "tailwindcss" source(".");
+@source "../index.html";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.bg-technical-grid {
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@keyframes flowForward {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowReverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 24;
+  }
+}
+
+.animate-current-forward {
+  stroke-dasharray: 6 6;
+  animation: flowForward 0.9s linear infinite;
+}
+
+.animate-current-reverse {
+  stroke-dasharray: 6 6;
+  animation: flowReverse 0.9s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-current-forward,
+  .animate-current-reverse {
+    animation: none;
+  }
+}

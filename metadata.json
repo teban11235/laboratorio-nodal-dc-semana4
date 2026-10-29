@@ -1,0 +1,6 @@
+{
+  "name": "Laboratorio Nodal DC — Circuitos Eléctricos Semana 4",
+  "description": "Recurso educativo interactivo para la enseñanza y práctica del Análisis Nodal y Supernodos en Corriente Continua (DC), basado en la Guía Didáctica de la Semana 4 (UTPL).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
