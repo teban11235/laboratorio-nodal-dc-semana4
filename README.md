@@ -2,6 +2,9 @@
 
 Recurso educativo interactivo diseñado para la enseñanza, simulación y práctica del **Análisis Nodal y Supernodos en Corriente Continua (DC)**, basado en la Guía Didáctica de la Semana 4 de la asignatura **Circuitos Eléctricos (UTPL)**.
 
+👉 **Abrir aplicación interactiva en línea (GitHub Pages):**  
+**[https://teban11235.github.io/laboratorio-nodal-dc-semana4/](https://teban11235.github.io/laboratorio-nodal-dc-semana4/)**
+
 ---
 
 ## Descripción General

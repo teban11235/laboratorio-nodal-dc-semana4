@@ -9,6 +9,8 @@ interface PdfModalProps {
 export const PdfReferenceModal: React.FC<PdfModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
+  const pdfUrl = `${import.meta.env.BASE_URL}assets/aistudio/Semana_4_4bb4eef3.pdf`;
+
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-slate-900/50 backdrop-blur-xs">
       <div className="w-full max-w-4xl bg-white h-full shadow-2xl border-l border-slate-200 flex flex-col">
@@ -40,7 +42,7 @@ export const PdfReferenceModal: React.FC<PdfModalProps> = ({ isOpen, onClose }) 
           <div className="text-xs text-slate-600 mb-2 flex items-center justify-between">
             <span>Vista completa del documento</span>
             <a
-              href="/assets/aistudio/Semana_4_4bb4eef3.pdf"
+              href={pdfUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1 text-sky-700 font-medium hover:underline"
@@ -50,7 +52,7 @@ export const PdfReferenceModal: React.FC<PdfModalProps> = ({ isOpen, onClose }) 
             </a>
           </div>
           <iframe
-            src="/assets/aistudio/Semana_4_4bb4eef3.pdf"
+            src={pdfUrl}
             title="Documento de Referencia PDF"
             className="w-full flex-1 rounded-lg border border-slate-300 bg-white"
           />
